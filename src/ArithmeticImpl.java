@@ -19,17 +19,17 @@ public class ArithmeticImpl implements Arithmetic {
 
     @Override
     public Integer[] getCountAndSum(ArrayList<Integer> arrayList) {
-        Integer[] resh = new Integer[2];
+        Integer[] resheni = new Integer[2];
         if (!arrayList.isEmpty()) {
-            resh[0] = 0;
-            resh[1] = 0;
+            resheni[0] = 0;
+            resheni[1] = 0;
             for (int i : arrayList) {
                 if (i > 0) {
-                    resh[0]++;
-                    resh[1] += i;
+                    resheni[0]++;
+                    resheni[1] += i;
                 }
             }
         }
-        return resh;
+        return resheni;
     }
 }
